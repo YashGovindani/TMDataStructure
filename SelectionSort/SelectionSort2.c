@@ -24,15 +24,16 @@ e++;
 
 int main()
 {
-int x[10],y,e,f,g,si;
+int x[5],y,req;
+req=5;
 y=0;
-while(y<=9)
+while(y<req)
 {
 printf("Enter a number : ");
 scanf("%d",&x[y]);
 y++;
 }
-selectionSort(x,10);
-for(y=0;y<=9;y++) printf("%d\n",x[y]);
+selectionSort(x,req);
+for(y=0;y<req;y++) printf("%d\n",x[y]);
 return 0;
 }

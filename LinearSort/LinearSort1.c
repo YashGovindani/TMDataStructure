@@ -2,17 +2,19 @@
 
 int main()
 {
-int x[5];
+int m;
+m=5;
+int x[m];
 int y,e,f,g,oep,iep;
-for(y=0;y<5;y++)
+for(y=0;y<m;y++)
 {
 printf("Enter a number : ");
 scanf("%d",&x[y]);
 fflush(stdin);
 }
 
-oep=5-2;
-iep=5-1;
+oep=m-2;
+iep=m-1;
 e=0;
 while(e<=oep)
 {
@@ -30,7 +32,7 @@ f++;
 e++;
 }
 
-for(y=0;y<5;y++)
+for(y=0;y<m;y++)
 {
 printf("%d\n",x[y]);
 }

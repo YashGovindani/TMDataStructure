@@ -25,16 +25,18 @@ e++;
 
 int main()
 {
-int x[5];
+int m;
+m=5;
+int x[m];
 int y;
-for(y=0;y<5;y++)
+for(y=0;y<m;y++)
 {
 printf("Enter a number : ");
 scanf("%d",&x[y]);
 fflush(stdin);
 }
-linearSort(x,5);
-for(y=0;y<5;y++)
+linearSort(x,m);
+for(y=0;y<m;y++)
 {
 printf("%d\n",x[y]);
 }
