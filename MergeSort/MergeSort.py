@@ -62,7 +62,8 @@ def mergeSort(x,lowerBound,upperBound,comparator):
             # push mid+1,b on stack1
             top1-=1
             stack1[top1]=(mid+1,b)
-    while top2!=req: # stack2 is not empty
+    print(stack2)
+    while top2!=size: # stack2 is not empty
         # pop from stack2 in lb1,ub2
         lb1,ub2=stack2[top2]
         top2+=1
@@ -76,5 +77,5 @@ def comparator(left,right):
 x=[]
 req=int(input("Enter your requirement : "))
 for y in range(req): x.append(int(input("Enter a number : ")))
-mergeSort(x,0,req-1,comparator)
+mergeSort(x,1,req-1,comparator)
 for y in x: print(y)

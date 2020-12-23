@@ -62,7 +62,7 @@ def mergeSort(x,lowerBound,upperBound):
             # push mid+1,b on stack1
             top1-=1
             stack1[top1]=(mid+1,b)
-    while top2!=req: # stack2 is not empty
+    while top2!=size: # stack2 is not empty
         # pop from stack2 in lb1,ub2
         lb1,ub2=stack2[top2]
         top2+=1
